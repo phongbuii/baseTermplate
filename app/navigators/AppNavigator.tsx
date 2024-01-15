@@ -14,10 +14,14 @@ import { useDispatch } from "react-redux"
 import { useSelector } from "@app/redux/reducers"
 import { api } from "@app/services/api"
 import Login from "@app/screens/Login"
+import Onboarding from "@app/screens/Onboarding"
+import { TabNavigator } from "./TabNavigation"
 
 
 export type AppStackParamList = {
- Login:undefined
+  Login: undefined,
+  OnBoarding: undefined,
+  TabNavigator: undefined
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
@@ -49,15 +53,18 @@ const AppStack = observer(function AppStack() {
       screenOptions={{ headerShown: false, navigationBarColor: colors.background }}
       // initialRouteName={isAuthenticated ? "TabNavigator" : "Login"} // @demo remove-current-line
 
-      initialRouteName={ "Login"} // @demo remove-current-line
+      initialRouteName={"OnBoarding"} // @demo remove-current-line
     >
       <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="OnBoarding" component={Onboarding} />
+      <Stack.Screen component={TabNavigator} name="TabNavigator" />
+
     </Stack.Navigator>
   )
 })
 
 export interface NavigationProps
-  extends Partial<React.ComponentProps<typeof NavigationContainer>> {}
+  extends Partial<React.ComponentProps<typeof NavigationContainer>> { }
 
 export const AppNavigator = observer(function AppNavigator(props: NavigationProps) {
   const colorScheme = useColorScheme()

@@ -172,6 +172,11 @@ export const iconRegistry = {
   gallery: require("./icons/gallery.png"),
   take_photo: require("./icons/take_photo.png"),
   view_more: require("./icons/view_more.png"),
+  ic_home_bt: require("./icons/home.png"),
+  ic_statistics_bt: require("./icons/statistics.png"),
+  user_2: require("./icons/user_2.png"),
+  trailing: require("./icons/trailing.png")
+
 }
 const $imageStyle: ImageStyle = {
   resizeMode: "contain",

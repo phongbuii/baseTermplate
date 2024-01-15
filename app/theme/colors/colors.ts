@@ -17,6 +17,11 @@ const palette = {
   primary400: "#D28468",
   primary500: "#228BE6",
   primary600: "#A54F31",
+  
+  primary700: "#9FCAFF",
+  
+  primary800: "#0061A5",
+
 
   secondary100: "#DCDDE9",
   secondary200: "#BCC0D6",
@@ -81,4 +86,9 @@ export const colors = {
    *
    */
   errorBackground: palette.angry100,
+
+  primaryDim: palette.primary700,
+
+  card:palette.primary800
+  
 }

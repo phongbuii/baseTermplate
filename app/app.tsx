@@ -16,7 +16,7 @@ if (__DEV__) {
   // to only execute this in development.
   require("./devtools/ReactotronConfig.ts")
 }
-import { OrientationLocker,  PORTRAIT } from "react-native-orientation-locker"
+import { OrientationLocker, PORTRAIT } from "react-native-orientation-locker"
 import { setLangInApp } from "./i18n"
 import "./utils/ignoreWarnings"
 import { useFonts } from "expo-font"
@@ -151,24 +151,24 @@ function App(props: AppProps) {
     config,
   }
   const customTheme = createThemeFromSourceColor(sourceColor)
-  codePush.checkForUpdate().then((update) => {
-    if (!update) {
-      console.log("The app is up to date!")
-    } else {
-      Alert.alert("Cập nhật", "Cập nhật phiên bản mới ngay!", [
-        {
-          text: "Ok",
-          onPress: () => {
-            codePush.sync()
-          },
-        },
-        {
-          text: "Hủy",
-        },
-      ])
-      console.log("An update is available! Should we download it?")
-    }
-  })
+  // codePush.checkForUpdate().then((update) => {
+  //   if (!update) {
+  //     console.log("The app is up to date!")
+  //   } else {
+  //     Alert.alert("Cập nhật", "Cập nhật phiên bản mới ngay!", [
+  //       {
+  //         text: "Ok",
+  //         onPress: () => {
+  //           codePush.sync()
+  //         },
+  //       },
+  //       {
+  //         text: "Hủy",
+  //       },
+  //     ])
+  //     console.log("An update is available! Should we download it?")
+  //   }
+  // })
 
   // const theme = isThemeDark
   //   ? { ...darkTheme, colors: { ...customTheme.dark, ...colorExpandDark } }
