@@ -20,3 +20,24 @@ export const formatDate = (date: string, dateFormat?: string, options?: Options)
   }
   return format(parseISO(date), dateFormat ?? "MMM dd, yyyy", dateOptions)
 }
+
+export const covertDayofWeek = (fullDay) => {
+   switch (fullDay) {
+    case 'Monday':
+      return 'T2';
+    case 'Tuesday':
+      return 'T3';
+    case 'Wednesday':
+      return 'T4';
+    case 'Thursday':
+      return 'T5';
+    case 'Friday':
+      return 'T6';
+    case 'Saturday':
+      return 'T7';
+    case 'Sunday':
+      return 'CN';
+    default:
+      return '';
+  }
+}

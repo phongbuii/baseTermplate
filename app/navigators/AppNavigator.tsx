@@ -53,7 +53,7 @@ const AppStack = observer(function AppStack() {
       screenOptions={{ headerShown: false, navigationBarColor: colors.background }}
       // initialRouteName={isAuthenticated ? "TabNavigator" : "Login"} // @demo remove-current-line
 
-      initialRouteName={"OnBoarding"} // @demo remove-current-line
+      initialRouteName={"TabNavigator"} // @demo remove-current-line
     >
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="OnBoarding" component={Onboarding} />
