@@ -175,7 +175,10 @@ export const iconRegistry = {
   ic_home_bt: require("./icons/home.png"),
   ic_statistics_bt: require("./icons/statistics.png"),
   user_2: require("./icons/user_2.png"),
-  trailing: require("./icons/trailing.png")
+  trailing: require("./icons/trailing.png"),
+  menu_v2: require("./icons/menu_v2.png"),
+  coin: require("./icons/coins.png"),
+  wallet: require("./icons/wallet.png")
 
 }
 const $imageStyle: ImageStyle = {

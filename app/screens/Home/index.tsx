@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, View } from "react-native"
+import { FlatList, ScrollView, StatusBar, StyleSheet, View } from "react-native"
 import React from "react"
 import { Screen } from "@app/components/Screen"
 import HeaderHome from "@app/components/headers"
@@ -12,6 +12,8 @@ import { covertDayofWeek } from "@app/utils/formatDate"
 import CalendarWeek from "./Item/CalendarWeek"
 import { colors } from "@app/theme/index"
 import ListHistory from "./Item/ListHistory"
+import HeaderH from "./Item/HeaderH"
+import GeneralChar from "./Item/GenganarChar"
 const Home = () => {
     const mapWeekDays = () => {
         const startOfWeek = moment().startOf("week").isoWeekday(1)
@@ -34,12 +36,12 @@ const Home = () => {
     // Example usage
     const weekDays = mapWeekDays()
     return (
-        <Screen preset="scroll" style={styles.container}>
-            <HeaderHome title="Vinh Anh" />
-            <CalendarWeek
-                styleContainer={{}}
-                weekDays={weekDays} />
-            <ListHistory />
+        <Screen style={styles.container}>
+            <HeaderH />
+            <ScrollView showsVerticalScrollIndicator={false} style={{ marginBottom: HEIGHT(200) }} >
+                <GeneralChar />
+                <ListHistory />
+            </ScrollView>
         </Screen>
     )
 }
@@ -48,7 +50,7 @@ export default Home
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.gray_1,
+        backgroundColor: colors.background,
         flex: 1,
     },
 })

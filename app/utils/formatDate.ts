@@ -41,3 +41,20 @@ export const covertDayofWeek = (fullDay) => {
       return '';
   }
 }
+
+export const customArrayWeek = () => {
+    const currentDate = new Date();
+
+    // Tạo mảng chứa 5 ngày xung quanh ngày hiện tại
+    const dateArray = [];
+
+    for (let i = -2; i <= 2; i++) {
+        const newDate = new Date(currentDate);
+        newDate.setDate(currentDate.getDate() + i);
+        dateArray.push(newDate.toISOString().slice(0, 10)); // Lấy phần YYYY-MM-DD
+    }
+
+  // console.log(dateArray);
+  return dateArray
+ }
+ 

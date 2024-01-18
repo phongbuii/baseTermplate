@@ -40,6 +40,18 @@ const palette = {
 
   overlay20: "rgba(25, 16, 21, 0.2)",
   overlay50: "rgba(25, 16, 21, 0.5)",
+
+  outline100: "#FFF6F4",
+  outline200:"#FFF8EA",
+  outline300: "#EDF4F4",
+  
+  success: "#E6F2E5",
+  success_add: "#0D5E06",
+  
+  column_chart: "#F69679",
+  
+  describe:"#73777F"
+  
 } as const
 
 export const colors = {
@@ -89,6 +101,22 @@ export const colors = {
 
   primaryDim: palette.primary700,
 
-  card:palette.primary800
+  card: palette.primary800,
+  
+  card_chart1: palette.outline100,
+  
+  card_chart2: palette.outline200,
+  
+  card_chart3: palette.outline300,
+  
+  success: palette.success,
+  
+  success_add: palette.success_add,
+  
+  column_chart: palette.column_chart,
+  
+  describe:palette.describe
+
+
   
 }
