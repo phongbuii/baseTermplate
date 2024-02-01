@@ -25,7 +25,7 @@ export const LoadingOpacity = ({ styleLoading, top, styleText, testID }: ItemPro
           styleLoading,
         ]}
       >
-        <ActivityIndicator size={24} color={colors.white} />
+        <ActivityIndicator size={24} color={colors.primary} />
         <Text
           size="ba"
           weight="normal"

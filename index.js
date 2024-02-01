@@ -12,5 +12,5 @@ function IgniteApp() {
 }
 
 
-AppRegistry.registerComponent("SDocter", () => IgniteApp)
+AppRegistry.registerComponent("com.spendmoney", () => IgniteApp)
 export default App

@@ -1,10 +1,4 @@
 PODS:
-  - AppAuth (1.6.2):
-    - AppAuth/Core (= 1.6.2)
-    - AppAuth/ExternalUserAgent (= 1.6.2)
-  - AppAuth/Core (1.6.2)
-  - AppAuth/ExternalUserAgent (1.6.2):
-    - AppAuth/Core
   - appcenter-analytics (5.0.0):
     - AppCenter/Analytics (~> 5.0)
     - AppCenterReactNativeShared (~> 5.0)
@@ -45,9 +39,6 @@ PODS:
   - ExpoAdapterFBSDKNext (11.3.0):
     - ExpoModulesCore
     - FBSDKCoreKit
-    - React-Core
-  - ExpoAdapterGoogleSignIn (10.0.1):
-    - ExpoModulesCore
     - React-Core
   - ExpoDevice (5.2.1):
     - ExpoModulesCore
@@ -91,9 +82,6 @@ PODS:
     - FirebaseAnalytics (~> 10.14.0)
   - Firebase/CoreOnly (10.14.0):
     - FirebaseCore (= 10.14.0)
-  - Firebase/Messaging (10.14.0):
-    - Firebase/CoreOnly
-    - FirebaseMessaging (~> 10.14.0)
   - FirebaseAnalytics (10.14.0):
     - FirebaseAnalytics/AdIdSupport (= 10.14.0)
     - FirebaseCore (~> 10.0)
@@ -125,15 +113,6 @@ PODS:
     - GoogleUtilities/Environment (~> 7.8)
     - GoogleUtilities/UserDefaults (~> 7.8)
     - PromisesObjC (~> 2.1)
-  - FirebaseMessaging (10.14.0):
-    - FirebaseCore (~> 10.0)
-    - FirebaseInstallations (~> 10.0)
-    - GoogleDataTransport (~> 9.2)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/Environment (~> 7.8)
-    - GoogleUtilities/Reachability (~> 7.8)
-    - GoogleUtilities/UserDefaults (~> 7.8)
-    - nanopb (< 2.30910.0, >= 2.30908.0)
   - Flipper (0.125.0):
     - Flipper-Folly (~> 2.6)
     - Flipper-RSocket (~> 1.4)
@@ -221,10 +200,6 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleSignIn (7.0.0):
-    - AppAuth (~> 1.5)
-    - GTMAppAuth (< 3.0, >= 1.3)
-    - GTMSessionFetcher/Core (< 4.0, >= 1.1)
   - GoogleUtilities (7.11.5):
     - GoogleUtilities/AppDelegateSwizzler (= 7.11.5)
     - GoogleUtilities/Environment (= 7.11.5)
@@ -259,10 +234,6 @@ PODS:
   - GoogleUtilities/UserDefaults (7.11.5):
     - GoogleUtilities/Logger
   - GoogleWebRTC (1.1.31999)
-  - GTMAppAuth (2.0.0):
-    - AppAuth/Core (~> 1.6)
-    - GTMSessionFetcher/Core (< 4.0, >= 1.5)
-  - GTMSessionFetcher/Core (3.1.1)
   - hermes-engine (0.71.7):
     - hermes-engine/Pre-built (= 0.71.7)
   - hermes-engine/Pre-built (0.71.7)
@@ -528,12 +499,6 @@ PODS:
   - React-jsinspector (0.71.7)
   - React-logger (0.71.7):
     - glog
-  - react-native-background-timer (2.4.1):
-    - React-Core
-  - react-native-date-picker (4.2.14):
-    - React-Core
-  - react-native-document-picker (9.0.1):
-    - React-Core
   - react-native-fbsdk-next (11.3.0):
     - React-Core
     - react-native-fbsdk-next/Core (= 11.3.0)
@@ -549,13 +514,7 @@ PODS:
     - FBSDKGamingServicesKit (~> 15.0.0)
     - FBSDKShareKit (~> 15.0.0)
     - React-Core
-  - react-native-full-screen-notification-incoming-call (0.1.12):
-    - React-Core
-  - react-native-image-picker (7.0.1):
-    - React-Core
   - react-native-orientation-locker (1.5.0):
-    - React-Core
-  - react-native-otp-verify (1.1.6):
     - React-Core
   - react-native-pager-view (6.2.1):
     - React-Core
@@ -659,26 +618,15 @@ PODS:
     - React-RCTText
   - RNBootSplash (4.5.0):
     - React-Core
-  - RNCallKeep (4.3.12):
-    - React
   - RNCAsyncStorage (1.17.11):
+    - React-Core
+  - RNCClipboard (1.13.2):
     - React-Core
   - RNDateTimePicker (7.5.0):
     - React-Core
-  - RNFBApp (18.3.2):
-    - Firebase/CoreOnly (= 10.14.0)
-    - React-Core
-  - RNFBMessaging (18.3.2):
-    - Firebase/Messaging (= 10.14.0)
-    - FirebaseCoreExtension (= 10.14.0)
-    - React-Core
-    - RNFBApp
   - RNFlashList (1.5.0):
     - React-Core
   - RNGestureHandler (2.9.0):
-    - React-Core
-  - RNGoogleSignin (10.0.1):
-    - GoogleSignIn (~> 7.0)
     - React-Core
   - RNNotifee (7.8.0):
     - React-Core
@@ -715,17 +663,12 @@ PODS:
   - RNScreens (3.20.0):
     - React-Core
     - React-RCTImage
-  - RNSound (0.11.2):
-    - React-Core
-    - RNSound/Core (= 0.11.2)
-  - RNSound/Core (0.11.2):
-    - React-Core
   - RNStringee (1.0.0):
     - React
     - Stringee (~> 1.9.14)
-  - RNVectorIcons (10.0.0):
+  - RNSVG (14.1.0):
     - React-Core
-  - RNVoipPushNotification (3.3.2):
+  - RNVectorIcons (10.0.0):
     - React-Core
   - SocketRocket (0.6.1)
   - SSZipArchive (2.2.3)
@@ -748,7 +691,6 @@ DEPENDENCIES:
   - EXFont (from `../node_modules/expo-font/ios`)
   - Expo (from `../node_modules/expo`)
   - ExpoAdapterFBSDKNext (from `../node_modules/react-native-fbsdk-next/ios`)
-  - "ExpoAdapterGoogleSignIn (from `../node_modules/@react-native-google-signin/google-signin/expo/ios`)"
   - ExpoDevice (from `../node_modules/expo-device/ios`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - ExpoLocalization (from `../node_modules/expo-localization/ios`)
@@ -805,14 +747,8 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - react-native-background-timer (from `../node_modules/react-native-background-timer`)
-  - react-native-date-picker (from `../node_modules/react-native-date-picker`)
-  - react-native-document-picker (from `../node_modules/react-native-document-picker`)
   - react-native-fbsdk-next (from `../node_modules/react-native-fbsdk-next`)
-  - react-native-full-screen-notification-incoming-call (from `../node_modules/react-native-full-screen-notification-incoming-call`)
-  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-orientation-locker (from `../node_modules/react-native-orientation-locker`)
-  - react-native-otp-verify (from `../node_modules/react-native-otp-verify`)
   - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-render-html (from `../node_modules/react-native-render-html`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -832,26 +768,21 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - ReactNativeKeyboardManager (from `../node_modules/react-native-keyboard-manager`)
   - RNBootSplash (from `../node_modules/react-native-bootsplash`)
-  - RNCallKeep (from `../node_modules/react-native-callkeep`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - "RNCClipboard (from `../node_modules/@react-native-clipboard/clipboard`)"
   - "RNDateTimePicker (from `../node_modules/@react-native-community/datetimepicker`)"
-  - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
-  - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
   - "RNFlashList (from `../node_modules/@shopify/flash-list`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
-  - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
   - "RNNotifee (from `../node_modules/@notifee/react-native`)"
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - RNSound (from `../node_modules/react-native-sound`)
   - RNStringee (from `../node_modules/stringee-react-native`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
-  - RNVoipPushNotification (from `../node_modules/react-native-voip-push-notification`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
-    - AppAuth
     - AppCenter
     - AppCenterReactNativeShared
     - Base64
@@ -868,7 +799,6 @@ SPEC REPOS:
     - FirebaseCoreExtension
     - FirebaseCoreInternal
     - FirebaseInstallations
-    - FirebaseMessaging
     - Flipper
     - Flipper-Boost-iOSX
     - Flipper-DoubleConversion
@@ -881,11 +811,8 @@ SPEC REPOS:
     - fmt
     - GoogleAppMeasurement
     - GoogleDataTransport
-    - GoogleSignIn
     - GoogleUtilities
     - GoogleWebRTC
-    - GTMAppAuth
-    - GTMSessionFetcher
     - IQKeyboardManagerSwift
     - JWT
     - libevent
@@ -922,8 +849,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo"
   ExpoAdapterFBSDKNext:
     :path: "../node_modules/react-native-fbsdk-next/ios"
-  ExpoAdapterGoogleSignIn:
-    :path: "../node_modules/@react-native-google-signin/google-signin/expo/ios"
   ExpoDevice:
     :path: "../node_modules/expo-device/ios"
   ExpoKeepAwake:
@@ -970,22 +895,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
-  react-native-background-timer:
-    :path: "../node_modules/react-native-background-timer"
-  react-native-date-picker:
-    :path: "../node_modules/react-native-date-picker"
-  react-native-document-picker:
-    :path: "../node_modules/react-native-document-picker"
   react-native-fbsdk-next:
     :path: "../node_modules/react-native-fbsdk-next"
-  react-native-full-screen-notification-incoming-call:
-    :path: "../node_modules/react-native-full-screen-notification-incoming-call"
-  react-native-image-picker:
-    :path: "../node_modules/react-native-image-picker"
   react-native-orientation-locker:
     :path: "../node_modules/react-native-orientation-locker"
-  react-native-otp-verify:
-    :path: "../node_modules/react-native-otp-verify"
   react-native-pager-view:
     :path: "../node_modules/react-native-pager-view"
   react-native-render-html:
@@ -1024,41 +937,32 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-keyboard-manager"
   RNBootSplash:
     :path: "../node_modules/react-native-bootsplash"
-  RNCallKeep:
-    :path: "../node_modules/react-native-callkeep"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNCClipboard:
+    :path: "../node_modules/@react-native-clipboard/clipboard"
   RNDateTimePicker:
     :path: "../node_modules/@react-native-community/datetimepicker"
-  RNFBApp:
-    :path: "../node_modules/@react-native-firebase/app"
-  RNFBMessaging:
-    :path: "../node_modules/@react-native-firebase/messaging"
   RNFlashList:
     :path: "../node_modules/@shopify/flash-list"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
-  RNGoogleSignin:
-    :path: "../node_modules/@react-native-google-signin/google-signin"
   RNNotifee:
     :path: "../node_modules/@notifee/react-native"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
-  RNSound:
-    :path: "../node_modules/react-native-sound"
   RNStringee:
     :path: "../node_modules/stringee-react-native"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
-  RNVoipPushNotification:
-    :path: "../node_modules/react-native-voip-push-notification"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
   AppCenter: a4070ec3d4418b5539067a51f57155012e486ebd
   appcenter-analytics: fbeef54afe6fa91d3803dfd31499817baa81fec0
   appcenter-core: e192ea8b373bebd3e44998882b43311078bd7dda
@@ -1075,7 +979,6 @@ SPEC CHECKSUMS:
   EXFont: 6ea3800df746be7233208d80fe379b8ed74f4272
   Expo: b7d2843b0a0027d0ce76121a63085764355a16ed
   ExpoAdapterFBSDKNext: 620f4a7b1ca3fe9769d6ea14cd0963851fe94d5f
-  ExpoAdapterGoogleSignIn: b6e7ca3d25261737d31c274460b503ff1b6cb303
   ExpoDevice: e0bebf68f978b3d353377ce42e73c20c0a070215
   ExpoKeepAwake: 69f5f627670d62318410392d03e0b5db0f85759a
   ExpoLocalization: f26cd431ad9ea3533c5b08c4fabd879176a794bb
@@ -1095,7 +998,6 @@ SPEC CHECKSUMS:
   FirebaseCoreExtension: 976638051b1a46b503afce7ec80277f9161f2040
   FirebaseCoreInternal: 2f4bee5ed00301b5e56da0849268797a2dd31fb4
   FirebaseInstallations: cae95cab0f965ce05b805189de1d4c70b11c76fb
-  FirebaseMessaging: 1077a4499f0c0a140b9a2e34fe08a1acc806b36d
   Flipper: 26fc4b7382499f1281eb8cb921e5c3ad6de91fe0
   Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
   Flipper-DoubleConversion: 2dc99b02f658daf147069aad9dbd29d8feb06d30
@@ -1109,11 +1011,8 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   GoogleAppMeasurement: 7fee012a868315d418f365fbc8d394d8e020e749
   GoogleDataTransport: 54dee9d48d14580407f8f5fbf2f496e92437a2f2
-  GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
   GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
-  GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
-  GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
   hermes-engine: 4438d2b8bf8bebaba1b1ac0451160bab59e491f8
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
   JWT: ef71dfb03e1f842081e64dc42eef0e164f35d251
@@ -1135,14 +1034,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: eaa5f71eb8f6861cf0e57f1a0f52aeb020d9e18e
   React-jsinspector: 9885f6f94d231b95a739ef7bb50536fb87ce7539
   React-logger: 3f8ebad1be1bf3299d1ab6d7f971802d7395c7ef
-  react-native-background-timer: 17ea5e06803401a379ebf1f20505b793ac44d0fe
-  react-native-date-picker: 8847cb359cf259ddae5ed165217e15573a654519
-  react-native-document-picker: 2b8f18667caee73a96708a82b284a4f40b30a156
   react-native-fbsdk-next: 16e652b5f1236492631185c58ec2ae15b029119d
-  react-native-full-screen-notification-incoming-call: c0a64a09e6e413eab704cc26b7190a65859ba629
-  react-native-image-picker: 1569cfade34b3a011191ce262423e6ce2f8db5a1
   react-native-orientation-locker: 851f6510d8046ea2f14aa169b1e01fcd309a94ba
-  react-native-otp-verify: 3dbd8a52ceb8d4dfc775bddd6fc98a453091ed5f
   react-native-pager-view: d211379f61895b6349bd7e571b44a26d005c2975
   react-native-render-html: 984dfe2294163d04bf5fe25d7c9f122e60e05ebe
   react-native-safe-area-context: 39c2d8be3328df5d437ac1700f4f3a4f75716acc
@@ -1162,27 +1055,23 @@ SPEC CHECKSUMS:
   ReactCommon: dbfbe2f7f3c5ce4ce44f43f2fd0d5950d1eb67c5
   ReactNativeKeyboardManager: 60292dbac467c49841a7d69588208ec4a4f7b2a2
   RNBootSplash: 364ec0f6a61d96bce40e8630d80d949c214a5749
-  RNCallKeep: aa9b1f9286f8f60d7b7d41ee5de47de564356aac
   RNCAsyncStorage: 8616bd5a58af409453ea4e1b246521bb76578d60
+  RNCClipboard: 60fed4b71560d7bfe40e9d35dea9762b024da86d
   RNDateTimePicker: b722c23030b744763cf51d80fc22f354653f65e0
-  RNFBApp: 0b534885354024f4d171ede8da04521d81bc1767
-  RNFBMessaging: a2ebefff4dd99eba6b16105bbc0b931bfdb0ce74
   RNFlashList: 25b0e092b4470c84db0386d4f5316dc34123bb6d
   RNGestureHandler: 071d7a9ad81e8b83fe7663b303d132406a7d8f39
-  RNGoogleSignin: ccaa4a81582cf713eea562c5dd9dc1961a715fd0
   RNNotifee: f3c01b391dd8e98e67f539f9a35a9cbcd3bae744
   RNReanimated: cc5e3aa479cb9170bcccf8204291a6950a3be128
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
-  RNSound: 6c156f925295bdc83e8e422e7d8b38d33bc71852
   RNStringee: 834cb883110a75340d24b44dd60ae5daffe749a5
+  RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
   RNVectorIcons: 8b5bb0fa61d54cd2020af4f24a51841ce365c7e9
-  RNVoipPushNotification: 543e18f83089134a35e7f1d2eba4c8b1f7776b08
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
   Stringee: 78db0ceaf302094c0061cd752522978ab0e00c37
   Yoga: d56980c8914db0b51692f55533409e844b66133c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: ad6acd6600deea6c42b9732925a8684613389dbd
+PODFILE CHECKSUM: bab4c1359970405f316c8e05f5d9f2f75de0b928
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.11.3

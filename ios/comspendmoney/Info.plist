@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>en</string>
 		<key>CFBundleDisplayName</key>
-		<string>SDocter</string>
+		<string>com.spendmoney</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
@@ -48,7 +48,7 @@
 		<key>FacebookDisplayName</key>
 		<string>SDocter</string>
 		<key>LSRequiresIPhoneOS</key>
-		<true />
+		<true/>
 		<key>NSAppTransportSecurity</key>
 		<dict>
 			<key>NSExceptionDomains</key>
@@ -56,7 +56,7 @@
 				<key>localhost</key>
 				<dict>
 					<key>NSExceptionAllowsInsecureHTTPLoads</key>
-					<true />
+					<true/>
 				</dict>
 			</dict>
 		</dict>
@@ -67,7 +67,7 @@
 		<string>We take your privacy very seriously and use camera services for uploading your
 			avatar or attach video into your post</string>
 		<key>NSLocationWhenInUseUsageDescription</key>
-		<string></string>
+		<string/>
 		<key>NSMicrophoneUsageDescription</key>
 		<string>SDocter uses Microphone</string>
 		<key>UIBackgroundModes</key>
@@ -88,7 +88,7 @@
 			<string>UIInterfaceOrientationLandscapeRight</string>
 		</array>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
-		<false />
+		<false/>
 		<key>AppSecret</key>
 		<string>5c44f692-5f32-4d51-a5bc-5d276c194744</string>
 		<key>CodePushDeploymentKey</key>

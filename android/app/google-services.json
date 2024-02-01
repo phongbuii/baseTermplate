@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808550070751",
+    "project_id": "spenmoney-5488c",
+    "storage_bucket": "spenmoney-5488c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808550070751:android:96c4f71a7238f1fff42c6a",
+        "android_client_info": {
+          "package_name": "com.sdocter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfxrDmGd6IoHJyZVja7uxbvXbCyZKfSAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
