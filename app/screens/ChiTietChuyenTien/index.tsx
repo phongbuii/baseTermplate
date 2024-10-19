@@ -12,6 +12,7 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context"
 import R from "@app/assets/index"
 import OTPPopup from "./components/OTPPopupProps"
+import BankSelectionModal from "./components/ModalListBank"
 interface DetailRowProps {
   label: string
   value: string
@@ -25,9 +26,11 @@ const DetailRow: React.FC<DetailRowProps> = ({ label, value, valueStyle }) => (
   </View>
 )
 
-const ChiTietChuyenTien: React.FC = () => {
+const ChiTietChuyenTien = () => {
   const insets = useSafeAreaInsets()
   const [openOTP, setOpenOTP] = useState(false)
+  const [modalVisible, setModalVisible] = useState(false)
+  const [selectedBank, setSelectedBank] = useState(null)
   return (
     <SafeAreaView style={[styles.container, { paddingTop: insets.top }]}>
       <View style={styles.header}>
@@ -60,7 +63,11 @@ const ChiTietChuyenTien: React.FC = () => {
             value="Nguyen Chu Thuy Trang"
             valueStyle={styles.redText}
           />
-          <DetailRow label="Ngân hàng nhận" value="Vietcombank" />
+          <DetailRow
+            label="Ngân hàng nhận"
+            value="Vietcombank"
+            // onPress={() => setModalVisible(true)}
+          />
           <Text style={styles.subBankName}>Ngân hàng TMCP Ngoại thương Việt Nam</Text>
           <DetailRow label="Nội dung" value="Nguyen Van An Chuyen Tien" />
           <DetailRow label="Phí chuyển tiền" value="Miễn phí" />
@@ -93,6 +100,14 @@ const ChiTietChuyenTien: React.FC = () => {
         onConfirm={() => {}}
         phoneNumber={"1"}
         isVisible={openOTP}
+      />
+      <BankSelectionModal
+        visible={modalVisible}
+        onClose={() => setModalVisible(false)}
+        onSelectBank={(bank) => {
+          setSelectedBank(bank)
+          setModalVisible(false)
+        }}
       />
     </SafeAreaView>
   )

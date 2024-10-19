@@ -17,12 +17,16 @@ import Login from "@app/screens/Login"
 import ChuyenTienTrongNuoc from "@app/screens/ChuyenTienTrongNuoc"
 import ChiTietChuyenTien from "@app/screens/ChiTietChuyenTien"
 import GiaoDichThanhCong from "@app/screens/GiaoDichThanhCong"
+import ListDanhSach from "@app/screens/ListDanhSach"
+import HomeScreen from "@app/screens/HomeScreen"
 
 export type AppStackParamList = {
   Login: undefined
   ChuyenTienTrongNuoc: undefined
   ChiTietChuyenTien: undefined
   GiaoDichThanhCong: undefined
+  ListDanhSach: undefined
+  HomeScreen: undefined
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
@@ -54,10 +58,13 @@ const AppStack = observer(function AppStack() {
       screenOptions={{ headerShown: false, navigationBarColor: colors.background }}
       // initialRouteName={isAuthenticated ? "TabNavigator" : "Login"} // @demo remove-current-line
 
-      initialRouteName={"ChiTietChuyenTien"} // @demo remove-current-line
+      initialRouteName={"ListDanhSach"} // @demo remove-current-line
     >
       <Stack.Screen name="ChiTietChuyenTien" component={ChiTietChuyenTien} />
       <Stack.Screen name="GiaoDichThanhCong" component={GiaoDichThanhCong} />
+      <Stack.Screen name="ListDanhSach" component={ListDanhSach} />
+      <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen name="ChuyenTienTrongNuoc" component={ChuyenTienTrongNuoc} />
     </Stack.Navigator>
   )
 })
