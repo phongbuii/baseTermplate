@@ -16,7 +16,7 @@ if (__DEV__) {
   // to only execute this in development.
   require("./devtools/ReactotronConfig.ts")
 }
-import { OrientationLocker,  PORTRAIT } from "react-native-orientation-locker"
+import { OrientationLocker, PORTRAIT } from "react-native-orientation-locker"
 import { setLangInApp } from "./i18n"
 import "./utils/ignoreWarnings"
 import { useFonts } from "expo-font"
