@@ -237,7 +237,7 @@ function HeaderAction(props: HeaderActionProps) {
         disabled={!onPress}
         activeOpacity={0.8}
       >
-        <Text weight="medium" size="sm" text={content} style={$actionText} />
+        <Text weight="bold" size="md" text={content} style={$actionText} />
       </TouchableOpacity>
     )
   }
@@ -247,7 +247,7 @@ function HeaderAction(props: HeaderActionProps) {
       <Icon
         size={24}
         icon={icon}
-        color={iconColor}
+        color={colors.text}
         onPress={onPress}
         containerStyle={[$actionIconContainer, { backgroundColor }]}
         style={isRTL ? { transform: [{ rotate: "180deg" }] } : {}}
@@ -283,7 +283,7 @@ const $actionTextContainer: ViewStyle = {
 }
 
 const $actionText: TextStyle = {
-  color: colors.tint,
+  color: colors.text,
 }
 
 const $actionIconContainer: ViewStyle = {

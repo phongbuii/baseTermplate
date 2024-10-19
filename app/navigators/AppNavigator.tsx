@@ -14,10 +14,15 @@ import { useDispatch } from "react-redux"
 import { useSelector } from "@app/redux/reducers"
 import { api } from "@app/services/api"
 import Login from "@app/screens/Login"
-
+import ChuyenTienTrongNuoc from "@app/screens/ChuyenTienTrongNuoc"
+import ChiTietChuyenTien from "@app/screens/ChiTietChuyenTien"
+import GiaoDichThanhCong from "@app/screens/GiaoDichThanhCong"
 
 export type AppStackParamList = {
- Login:undefined
+  Login: undefined
+  ChuyenTienTrongNuoc: undefined
+  ChiTietChuyenTien: undefined
+  GiaoDichThanhCong: undefined
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
@@ -49,9 +54,10 @@ const AppStack = observer(function AppStack() {
       screenOptions={{ headerShown: false, navigationBarColor: colors.background }}
       // initialRouteName={isAuthenticated ? "TabNavigator" : "Login"} // @demo remove-current-line
 
-      initialRouteName={ "Login"} // @demo remove-current-line
+      initialRouteName={"ChiTietChuyenTien"} // @demo remove-current-line
     >
-      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="ChiTietChuyenTien" component={ChiTietChuyenTien} />
+      <Stack.Screen name="GiaoDichThanhCong" component={GiaoDichThanhCong} />
     </Stack.Navigator>
   )
 })
