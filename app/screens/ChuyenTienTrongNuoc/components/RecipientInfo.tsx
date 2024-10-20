@@ -30,7 +30,7 @@ const RecipientInfo = () => (
 
       <ChevronDown color="#000" size={20} />
     </TouchableOpacity>
-    <TouchableOpacity style={styles.input}>
+    <View style={styles.input}>
       <View style={{ gap: 6 }}>
         <Text style={styles.title}>Tài khoản/thẻ nhận</Text>
         <TextInput
@@ -46,8 +46,8 @@ const RecipientInfo = () => (
         />
       </View>
       <FileText color="#2c7a3f" size={20} />
-    </TouchableOpacity>
-    <TouchableOpacity style={styles.input}>
+    </View>
+    <View style={styles.input}>
       <View style={{ gap: 8, paddingBottom: 4 }}>
         <Text style={styles.title}>Tên người nhận</Text>
         <TextInput
@@ -62,7 +62,7 @@ const RecipientInfo = () => (
           }}
         />
       </View>
-    </TouchableOpacity>
+    </View>
     <View style={styles.switchContainer}>
       <Text style={styles.textSave}>Lưu người nhận</Text>
       <Switch />

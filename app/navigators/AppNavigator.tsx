@@ -19,6 +19,8 @@ import ChiTietChuyenTien from "@app/screens/ChiTietChuyenTien"
 import GiaoDichThanhCong from "@app/screens/GiaoDichThanhCong"
 import ListDanhSach from "@app/screens/ListDanhSach"
 import HomeScreen from "@app/screens/HomeScreen"
+import ThongTinThongBao from "@app/screens/ThongTinThongBao"
+import QRScannerScreen from "@app/screens/QRScannerScreen"
 
 export type AppStackParamList = {
   Login: undefined
@@ -27,6 +29,8 @@ export type AppStackParamList = {
   GiaoDichThanhCong: undefined
   ListDanhSach: undefined
   HomeScreen: undefined
+  ThongTinThongBao: undefined
+  QRScannerScreen: undefined
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
@@ -65,6 +69,8 @@ const AppStack = observer(function AppStack() {
       <Stack.Screen name="ListDanhSach" component={ListDanhSach} />
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="ChuyenTienTrongNuoc" component={ChuyenTienTrongNuoc} />
+      <Stack.Screen name="ThongTinThongBao" component={ThongTinThongBao} />
+      <Stack.Screen name="QRScannerScreen" component={QRScannerScreen} />
     </Stack.Navigator>
   )
 })

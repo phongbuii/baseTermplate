@@ -31,6 +31,30 @@ const ListDanhSach = () => {
       >
         {"Màn hình home"}
       </Button>
+      <Button
+        mode={"contained"}
+        onPress={() => {
+          navigate("GiaoDichThanhCong")
+        }}
+      >
+        {"Giao dịch thành công"}
+      </Button>
+      <Button
+        mode={"contained"}
+        onPress={() => {
+          navigate("ThongTinThongBao")
+        }}
+      >
+        {"Thông tin thông báo"}
+      </Button>
+      <Button
+        mode={"contained"}
+        onPress={() => {
+          navigate("QRScannerScreen")
+        }}
+      >
+        {"quét code"}
+      </Button>
     </View>
   )
 }

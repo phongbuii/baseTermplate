@@ -2,6 +2,7 @@ import React from "react"
 import { View, Text, TouchableOpacity, StyleSheet, StatusBar } from "react-native"
 import { ArrowLeft, Home } from "lucide-react-native"
 import { WIDTH } from "@app/config/functions"
+import { goBack } from "@app/navigators/navigationUtilities"
 
 const Header = () => (
   <View>
@@ -9,7 +10,11 @@ const Header = () => (
     <View style={{ height: 40 }} />
     <View style={styles.header}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12, flex: 1 }}>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            goBack()
+          }}
+        >
           <ArrowLeft color="#000" size={24} />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Chuyển tiền trong nước</Text>

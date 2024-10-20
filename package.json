@@ -98,6 +98,7 @@
     "react-native-toast-message": "^2.1.6",
     "react-native-uuid-generator": "^6.1.1",
     "react-native-vector-icons": "^10.0.0",
+    "react-native-vision-camera": "2",
     "react-redux": "^8.1.2",
     "reactotron-mst": "3.1.4",
     "reactotron-react-js": "^3.3.7",
