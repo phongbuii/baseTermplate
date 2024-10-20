@@ -10,6 +10,8 @@ import { HEIGHT, WIDTH } from "@app/config/functions"
 import VCBRewardsCard from "./components/VCBRewardsCard"
 import PromoCard from "./components/PromoCard"
 import FinanceManagementCard from "./components/FinanceManagementCard"
+import NewAction from "./components/NewAction"
+import Muasamlientay from "./components/Muasamlientay"
 // import Header from "./components/Header"
 // import AccountCard from "./components/AccountCard"
 // import FavoriteFeatures from "./components/FavoriteFeatures"
@@ -36,6 +38,9 @@ const App = () => {
         <View style={{ height: HEIGHT(24) }} />
         <FinanceManagementCard onExplorePress={() => {}} />
         <View style={{ height: HEIGHT(24) }} />
+        <NewAction />
+        <View style={{ height: HEIGHT(24) }} />
+        <Muasamlientay />
       </ScrollView>
       <ChatWithDigibot />
       <BottomNavigation />
